@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Verb</title>
 </head>
 <body>
-    <h1>hola mundo</h1>
+    <main>
+        <section>
+            <div class="title">
+                <span class="material-symbols-outlined">rocket_launch</span>
+                <h1>web verb</h1>
+            </div>
+
+            <div id="containerForm">
+                <div id="containerVerbs">
+                    <div>
+                        <p id="verbPresent"></p>
+                        <span>present</span>
+                    </div>
+
+                    <div>
+                        <p id="verbPast"></p>
+                        <span>past</span>
+                    </div>
+
+                    <div>
+                        <p id="verbParticiple"></p>
+                        <span>participle</span>
+                    </div>
+                    <div>
+                        <p id="verbTraslade"></p>
+                        <span>traslade</span>
+                    </div>
+                </div>
+                
+                <p id="contador"> 0 / 5</p>
+
+                <div id="formValidate">
+                    <div id="formValidateOptions">
+                        <input type="text">
+                        <button id="btnValidate" class="btn">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </button>
+                        <p id="show"> - </p>
+                    </div>
+                </div>
+               
+            </div>  
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>

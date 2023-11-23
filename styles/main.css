@@ -1,0 +1,152 @@
+* { margin: 0; padding: 0; }
+
+body {
+    /*background-color: #212F3C;*/
+    background-color: #21618C;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main section {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section .title {
+    position: relative;
+    padding: 20px 0;
+}
+
+main section .title h1 {
+    font-size: 58px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+main section .title span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+}
+
+main section #containerForm {
+    width: 70%;
+    /*background-color: #2E4053;*/
+    background-color: #1A5276;
+    border-radius: 20px;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+main section #containerForm #contador {
+    font-size: 22px;
+}
+
+main section #containerVerbs {
+    text-align: center;
+    width: 70%;
+    display: flex;
+}
+
+main section #containerVerbs div {
+    width: 33%;
+}
+main section #containerVerbs div p{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+main section #containerVerbs div span{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+main section #formValidate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main section #formValidateOptions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main section #formValidateOptions input {
+    width: 70%;
+    border-radius: 15px;
+    padding: 16px 0;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.btn { 
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    display: flex;
+}
+
+.btn span {
+    font-size: 30px;
+    color: #363a3d;
+}
+
+.btnReset {
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #363a3d;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+#show {text-transform: capitalize;}
+
+@media(max-width: 1024px){
+    main section {width: 90%;}
+    main section #containerForm {width: 80%;}
+}
+
+@media(max-width: 820px){
+    main section #containerForm {padding: 40px 50px;}
+    main section #containerVerbs{ width: 80%;}
+}
+
+@media(max-width: 425px) {
+    main section { width: 95%;}
+    main section .title h1 {font-size: 48px;}
+    main section #containerForm {width: 90%; padding: 35px 10px;}
+    main section #containerForm #contador {font-size: 14px;}
+    main section #containerVerbs {width: 100%;}
+    main section #containerVerbs div p {font-size: 14px;}
+    main section #containerVerbs div span {font-size: 10px;}
+    main section #formValidateOptions input {width: 80%; padding: 12px 0; font-size: 14px;}
+    .btn span { font-size: 24px; }
+    #show {font-size: 14px;}
+    .btnReset {font-size: 14px; padding: 10px 30px;}
+}
